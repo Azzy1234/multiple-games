@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Fun Games</title>
+  <style>
+    .result {
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Fun Games</h1>
+
+  <!-- Coin Flip Section -->
+  <h2>Flip a Coin</h2>
+  <div class="input-container">
+    <label for="flipCount">Number of flips: </label>
+    <input type="number" id="flipCount" min="1" value="1">
+  </div>
+  <button id="flipButton">Simulate Flips</button>
+  <div class="result" id="coinResult">Result will appear here</div>
+
+  <!-- Dice Roll Section -->
+  <h2>Roll a Dice</h2>
+  <button id="diceButton">Roll Dice</button>
+  <div class="result" id="diceResult">Result will appear here</div>
+
+  <!-- Rock Paper Scissors Section -->
+  <h2>Rock, Paper, Scissors</h2>
+  <button id="rockButton">Rock</button>
+  <button id="paperButton">Paper</button>
+  <button id="scissorsButton">Scissors</button>
+  <div class="result" id="rpsResult">Result will appear here</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
